@@ -21,7 +21,7 @@
     "id":3,
     "projectTitle": "Maison Luxe",
     "description": "Visual identity refresh for a modern luxury lifestyle brand.",
-    "projectCategory": "Brand Identity",
+    "projectCategory": "UI-UX",
     "images": "https://picsum.photos/seed/maison-home/1200/900",
     "path": "projects/project3.html",
     "order": 3
@@ -30,7 +30,7 @@
     "id":4,
     "projectTitle": "Apex Fitness",
     "description": "Campaign-led design system across print and digital assets.",
-    "projectCategory": "Marketing",
+    "projectCategory": "Motion Graphic",
     "images": "https://picsum.photos/seed/apex-home/1200/900",
     "path": "projects/project4.html",
     "order": 4
@@ -39,7 +39,7 @@
     "id":5,
     "projectTitle": "Kova Coffee",
     "description": "Packaging visuals and shelf branding for specialty coffee SKUs.",
-    "projectCategory": "Packaging",
+    "projectCategory": "Shoots",
     "images": "https://picsum.photos/seed/kova-home/1200/900",
     "path": "projects/project5.html",
     "order": 5
@@ -48,7 +48,7 @@
     "id":6,
     "projectTitle": "Nova Tech",
     "description": "Foundational brand strategy and launch-facing visual toolkit.",
-    "projectCategory": "Brand Strategy",
+    "projectCategory": "Prints",
     "images": "https://picsum.photos/seed/nova-home/1200/900",
     "path": "projects/project6.html",
     "order": 6
@@ -57,7 +57,7 @@
     "id":7,
     "projectTitle": "Nova Tech",
     "description": "Foundational brand strategy and launch-facing visual toolkit.",
-    "projectCategory": "Brand Strategy",
+    "projectCategory": "Events",
     "images": "https://picsum.photos/seed/nova-home/1200/900",
     "path": "projects/project7.html",
     "order": 7
@@ -66,7 +66,7 @@
     "id":8,
     "projectTitle": "Nova Tech",
     "description": "Foundational brand strategy and launch-facing visual toolkit.",
-    "projectCategory": "Brand Strategy",
+    "projectCategory": "Social Media",
     "images": "https://picsum.photos/seed/nova-home/1200/900",
     "path": "projects/project8.html"
   },
@@ -74,7 +74,7 @@
     "id":9,
     "projectTitle": "Scram",
     "description": "Packaging visuals and shelf branding for specialty coffee SKUs.",
-    "projectCategory": "VISHU",
+    "projectCategory": "3D",
     "images": "https://picsum.photos/seed/kova-home/1200/900",
     "path": "projects/project9.html"
     

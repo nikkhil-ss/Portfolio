@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maison Luxe — Studio Noir</title>
+    <title>Verde Organics — VR.STUDIO</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap"
         rel="stylesheet">
@@ -157,6 +157,7 @@
             color: var(--accent) !important;
             padding: .5rem 1.4rem;
             border-radius: 2px;
+            transition: background .25s, color .25s !important;
         }
 
         .nav-cta:hover {
@@ -214,7 +215,7 @@
         }
 
         .project-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
             font-size: clamp(3rem, 8vw, 7rem);
             font-weight: 900;
             line-height: .95;
@@ -254,9 +255,9 @@
         }
 
         .meta-value {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-            font-weight: 700;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
         }
 
         .project-body {
@@ -266,14 +267,15 @@
         }
 
         .project-section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
             font-size: clamp(1.8rem, 3vw, 2.8rem);
-            font-weight: 900;
+            font-weight: 500;
+            text-align: center;
             margin-bottom: 1.5rem;
         }
 
         .project-section-title em {
-            font-style: italic;
+            font-style: normal;
             color: var(--accent);
         }
 
@@ -315,12 +317,11 @@
 
         .project-back {
             padding: 3rem 4rem;
-            border-top: 1px solid rgba(200, 169, 110, .1);
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 5rem;
         }
 
         .btn-back {
@@ -342,31 +343,48 @@
             border-color: var(--accent);
         }
 
-        footer {
-            padding: 3rem 4rem;
-            border-top: 1px solid rgba(200, 169, 110, .1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
+          /* ─── FOOTER ─── */
+  footer {
+    padding: 3rem 4rem;
+    border-top: 1px solid rgba(200,169,110,0.1);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1.5rem;
+  }
+  .footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.12em;
+    color: var(--cream);
+  }
+  .footer-logo span { color: var(--accent); }
+  .footer-copy { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.06em; }
+  .footer-socials { display: flex; gap: 1.2rem; }
+  .social-link {
+    width: 34px; height: 34px;
+    border: 1px solid rgba(200,169,110,0.15);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: color .25s, border-color .25s, background .25s;
+  }
+  .social-link svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+  .social-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(200,169,110,0.06);
+  }
 
-        .footer-logo {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.5rem;
-            letter-spacing: .12em;
-            color: var(--cream);
-        }
 
-        .footer-logo span {
-            color: var(--accent);
-        }
-
-        .footer-copy {
-            font-size: .78rem;
-            color: var(--text-muted);
-        }
 
         @keyframes fadeUp {
             from {
@@ -448,7 +466,7 @@
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
     <nav id="nav">
-        <a href="../index.html" class="nav-logo">Studio<span>.</span>Noir</a>
+        <a href="../index.html" class="nav-logo">VR<span>.</span>STUDIO</a>
         <ul class="nav-links">
             <li><a href="../index.html#about">About</a></li>
             <li><a href="../index.html#services">Services</a></li>
@@ -458,24 +476,24 @@
     </nav>
 
     <section class="project-hero">
-        <img class="project-hero-img" src="https://picsum.photos/seed/maison-hero/1600/900" alt="Maison Luxe">
+        <img class="project-hero-img" src="https://picsum.photos/seed/verde-hero/1600/900" alt="Verde Organics">
         <div class="project-hero-overlay"></div>
         <div class="project-hero-content">
-            <div class="project-eyebrow">Brand Identity</div>
-            <h1 class="project-title">Maison Luxe</h1>
-            <p class="project-subtitle">A visual identity refresh for a modern luxury lifestyle brand — redefining
-                elegance for a contemporary audience.</p>
+            <div class="project-eyebrow">Packaging Design</div>
+            <h1 class="project-title">Verde Organics</h1>
+            <p class="project-subtitle">Eco-first packaging direction for a fast-growing organic label — where
+                sustainability meets shelf presence.</p>
         </div>
     </section>
 
     <div class="project-meta">
         <div class="meta-item">
             <div class="meta-label">Category</div>
-            <div class="meta-value">Brand Identity</div>
+            <div class="meta-value">Packaging Design</div>
         </div>
         <div class="meta-item">
             <div class="meta-label">Client</div>
-            <div class="meta-value">Maison Luxe Group</div>
+            <div class="meta-value">Verde Organics Ltd.</div>
         </div>
         <div class="meta-item">
             <div class="meta-label">Year</div>
@@ -485,31 +503,32 @@
 
     <div class="project-body">
         <h2 class="project-section-title">The <em>Challenge</em></h2>
-        <p class="project-text">Maison Luxe came to us with an identity that had aged out of its market position. What
-            was once perceived as classic had become staid — the brand needed to reclaim relevance among younger
-            affluent consumers without alienating its existing loyal base.</p>
-        <p class="project-text">The challenge was nuanced: a full rebrand would fracture brand equity built over two
-            decades. The brief was a precision refresh — evolved, not replaced.</p>
+        <p class="project-text">Verde Organics needed packaging that could communicate ecological integrity without
+            sacrificing premium appeal. The brand occupies a crowded space where every brand claims to be "green" — our
+            task was to make Verde's eco credentials feel genuine, not performative.</p>
+        <p class="project-text">The deliverables covered a full family of 14 SKUs across three product lines, from raw
+            grains to cold-pressed oils, each requiring its own adaptive treatment within a unified system.</p>
 
         <div class="project-img-grid">
-            <img src="https://picsum.photos/seed/maison-1/800/600" alt="Maison Identity">
-            <img src="https://picsum.photos/seed/maison-2/800/600" alt="Maison Wordmark">
+            <img src="https://picsum.photos/seed/verde-1/800/600" alt="Verde Packaging Front">
+            <img src="https://picsum.photos/seed/verde-2/800/600" alt="Verde Label System">
         </div>
 
         <h2 class="project-section-title">The <em>Solution</em></h2>
-        <p class="project-text">We refined — not replaced. The wordmark received new geometric proportions while
-            retaining recognisable letterforms. The palette was elevated: deep charcoal, champagne gold, and ivory with
-            richer tonal depth. Brand collateral was redesigned with editorial spacing and disciplined whitespace to
-            signal premium positioning.</p>
-        <p class="project-text">The brand now reads as quietly confident — the hallmark of true luxury.</p>
+        <p class="project-text">We built a modular packaging architecture using uncoated kraft and recycled board as
+            primary materials. The identity uses botanical illustration as a dominant graphic device — hand-drawn
+            details that reward close inspection and reinforce the product's artisan origin story.</p>
+        <p class="project-text">Typography is deliberately analogue — a mix of hand-lettered headlines and a quiet
+            grotesque for specifications. Ink is limited to three earth-toned spot colours across the full range,
+            keeping production costs low and environmental impact minimal.</p>
 
         <div class="project-img-full">
-            <img src="https://picsum.photos/seed/maison-3/1200/600" alt="Maison Spread">
+            <img src="https://picsum.photos/seed/verde-3/1200/600" alt="Verde Full Lineup">
         </div>
 
         <div class="project-img-grid">
-            <img src="https://picsum.photos/seed/maison-4/800/600" alt="Maison Stationery">
-            <img src="https://picsum.photos/seed/maison-5/800/600" alt="Maison Environment">
+            <img src="https://picsum.photos/seed/verde-4/800/600" alt="Verde In Context">
+            <img src="https://picsum.photos/seed/verde-5/800/600" alt="Verde Detail Shot">
         </div>
     </div>
 
@@ -518,10 +537,23 @@
         <a href="../index.html#portfolio" class="btn-back">Home →</a>
     </div>
 
-    <footer>
-        <div class="footer-logo">Studio<span>.</span>Noir</div>
-        <div class="footer-copy">© 2025 Studio Noir. All rights reserved.</div>
-    </footer>
+    <!-- FOOTER -->
+<footer>
+  <div class="footer-logo">VR<span>.</span>STUDIO</div>
+  <div class="footer-copy">© 2025 VR.STUDIO. All rights reserved. Crafted with intention.</div>
+  <div class="footer-socials">
+    <a href="#" class="social-link" title="Instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37a4 4 0 1 1-1.37-1.37"></path>
+        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+      </svg>
+    </a>
+    <a href="#" class="social-link" title="Behance">Be</a>
+    <a href="#" class="social-link" title="Dribbble">Dr</a>
+    <a href="#" class="social-link" title="LinkedIn">Li</a>
+  </div>
+</footer>
 
     <script>
         const cursor = document.getElementById('cursor'), ring = document.getElementById('cursor-ring');

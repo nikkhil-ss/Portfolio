@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studio Noir — All Projects</title>
+<title>VR.STUDIO — All Projects</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -152,8 +152,11 @@
   .page-header-eyebrow::before {
     content: ''; width: 40px; height: 1px; background: var(--accent);
   }
+  .page-header-eyebrow::after {
+    content: ''; width: 40px; height: 1px; background: var(--accent);
+  }
   .page-header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(3rem, 7vw, 6rem);
     font-weight: 900;
     line-height: 0.95;
@@ -161,7 +164,7 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.4s forwards;
   }
-  .page-header-title em { font-style: italic; color: var(--accent); }
+  .page-header-title em { font-style: normal; color: var(--accent); }
   .page-header-sub {
     max-width: 500px;
     font-size: 0.95rem;
@@ -282,18 +285,18 @@
   }
   .work-cat {
     font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: 0.4rem;
+    color: var(--accent); margin-bottom: 0.1rem;
   }
   .work-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem; font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7rem; font-weight: 500;
+    margin-bottom: 0.1rem;
   }
   .work-details {
     font-size: 0.78rem;
     line-height: 1.6;
     color: rgba(245,240,232,0.6);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.2rem;
   }
   .work-client {
     font-size: 0.65rem;
@@ -339,11 +342,20 @@
     width: 34px; height: 34px;
     border: 1px solid rgba(200,169,110,0.15);
     border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
     text-decoration: none;
     font-size: 0.75rem;
     color: var(--text-muted);
     transition: color .25s, border-color .25s, background .25s;
+  }
+  .social-link svg {
+    width: 14px;
+    height: 14px;
+    display: block;
   }
   .social-link:hover {
     color: var(--accent);
@@ -408,7 +420,7 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="index.html" class="nav-logo">Studio<span>.</span>Noir</a>
+  <a href="index.html" class="nav-logo">VR<span>.</span>STUDIO</a>
   <ul class="nav-links">
     <li><a href="index.html#about">About</a></li>
     <li><a href="index.html#services">Services</a></li>
@@ -438,10 +450,16 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Studio<span>.</span>Noir</div>
-  <div class="footer-copy">© 2025 Studio Noir. All rights reserved. Crafted with intention.</div>
+  <div class="footer-logo">VR<span>.</span>STUDIO</div>
+  <div class="footer-copy">© 2025 VR.STUDIO. All rights reserved. Crafted with intention.</div>
   <div class="footer-socials">
-    <a href="#" class="social-link" title="Instagram">Ig</a>
+    <a href="#" class="social-link" title="Instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37a4 4 0 1 1-1.37-1.37"></path>
+        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+      </svg>
+    </a>
     <a href="#" class="social-link" title="Behance">Be</a>
     <a href="#" class="social-link" title="Dribbble">Dr</a>
     <a href="#" class="social-link" title="LinkedIn">Li</a>

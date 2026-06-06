@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Tech — Studio Noir</title>
+    <title>Verde Organics — VR.STUDIO</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap"
         rel="stylesheet">
@@ -157,6 +157,7 @@
             color: var(--accent) !important;
             padding: .5rem 1.4rem;
             border-radius: 2px;
+            transition: background .25s, color .25s !important;
         }
 
         .nav-cta:hover {
@@ -214,7 +215,7 @@
         }
 
         .project-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
             font-size: clamp(3rem, 8vw, 7rem);
             font-weight: 900;
             line-height: .95;
@@ -254,9 +255,9 @@
         }
 
         .meta-value {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-            font-weight: 700;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
         }
 
         .project-body {
@@ -266,14 +267,15 @@
         }
 
         .project-section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
             font-size: clamp(1.8rem, 3vw, 2.8rem);
-            font-weight: 900;
+            font-weight: 500;
+            text-align: center;
             margin-bottom: 1.5rem;
         }
 
         .project-section-title em {
-            font-style: italic;
+            font-style: normal;
             color: var(--accent);
         }
 
@@ -315,12 +317,11 @@
 
         .project-back {
             padding: 3rem 4rem;
-            border-top: 1px solid rgba(200, 169, 110, .1);
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 5rem;
         }
 
         .btn-back {
@@ -342,31 +343,48 @@
             border-color: var(--accent);
         }
 
-        footer {
-            padding: 3rem 4rem;
-            border-top: 1px solid rgba(200, 169, 110, .1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
+          /* ─── FOOTER ─── */
+  footer {
+    padding: 3rem 4rem;
+    border-top: 1px solid rgba(200,169,110,0.1);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1.5rem;
+  }
+  .footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.12em;
+    color: var(--cream);
+  }
+  .footer-logo span { color: var(--accent); }
+  .footer-copy { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.06em; }
+  .footer-socials { display: flex; gap: 1.2rem; }
+  .social-link {
+    width: 34px; height: 34px;
+    border: 1px solid rgba(200,169,110,0.15);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: color .25s, border-color .25s, background .25s;
+  }
+  .social-link svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+  .social-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(200,169,110,0.06);
+  }
 
-        .footer-logo {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.5rem;
-            letter-spacing: .12em;
-            color: var(--cream);
-        }
 
-        .footer-logo span {
-            color: var(--accent);
-        }
-
-        .footer-copy {
-            font-size: .78rem;
-            color: var(--text-muted);
-        }
 
         @keyframes fadeUp {
             from {
@@ -448,7 +466,7 @@
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
     <nav id="nav">
-        <a href="../index.html" class="nav-logo">Studio<span>.</span>Noir</a>
+        <a href="../index.html" class="nav-logo">VR<span>.</span>STUDIO</a>
         <ul class="nav-links">
             <li><a href="../index.html#about">About</a></li>
             <li><a href="../index.html#services">Services</a></li>
@@ -458,61 +476,59 @@
     </nav>
 
     <section class="project-hero">
-        <img class="project-hero-img" src="https://picsum.photos/seed/nova-hero/1600/900" alt="Nova Tech">
+        <img class="project-hero-img" src="https://picsum.photos/seed/verde-hero/1600/900" alt="Verde Organics">
         <div class="project-hero-overlay"></div>
         <div class="project-hero-content">
-            <div class="project-eyebrow">Brand Strategy</div>
-            <h1 class="project-title">Nova Tech</h1>
-            <p class="project-subtitle">Foundational brand strategy and launch-facing visual toolkit — positioning a
-                tech disruptor for the market it intends to own.</p>
+            <div class="project-eyebrow">Packaging Design</div>
+            <h1 class="project-title">Verde Organics</h1>
+            <p class="project-subtitle">Eco-first packaging direction for a fast-growing organic label — where
+                sustainability meets shelf presence.</p>
         </div>
     </section>
 
     <div class="project-meta">
         <div class="meta-item">
             <div class="meta-label">Category</div>
-            <div class="meta-value">Brand Strategy</div>
+            <div class="meta-value">Packaging Design</div>
         </div>
         <div class="meta-item">
             <div class="meta-label">Client</div>
-            <div class="meta-value">Nova Technologies</div>
+            <div class="meta-value">Verde Organics Ltd.</div>
         </div>
         <div class="meta-item">
             <div class="meta-label">Year</div>
-            <div class="meta-value">2024</div>
+            <div class="meta-value">2025</div>
         </div>
     </div>
 
     <div class="project-body">
         <h2 class="project-section-title">The <em>Challenge</em></h2>
-        <p class="project-text">Nova Technologies was six months from product launch with no brand foundation — no
-            visual language, no positioning document, no tone of voice. The team had strong technical conviction but
-            needed strategic clarity on who they were, what they stood for, and how to communicate it to the market they
-            intended to disrupt.</p>
-        <p class="project-text">The compressed timeline required strategy and creative to run in parallel — no
-            sequential waterfall.</p>
+        <p class="project-text">Verde Organics needed packaging that could communicate ecological integrity without
+            sacrificing premium appeal. The brand occupies a crowded space where every brand claims to be "green" — our
+            task was to make Verde's eco credentials feel genuine, not performative.</p>
+        <p class="project-text">The deliverables covered a full family of 14 SKUs across three product lines, from raw
+            grains to cold-pressed oils, each requiring its own adaptive treatment within a unified system.</p>
 
         <div class="project-img-grid">
-            <img src="https://picsum.photos/seed/nova-1/800/600" alt="Nova Identity System">
-            <img src="https://picsum.photos/seed/nova-2/800/600" alt="Nova Brand Guidelines">
+            <img src="https://picsum.photos/seed/verde-1/800/600" alt="Verde Packaging Front">
+            <img src="https://picsum.photos/seed/verde-2/800/600" alt="Verde Label System">
         </div>
 
         <h2 class="project-section-title">The <em>Solution</em></h2>
-        <p class="project-text">We ran a 3-week brand sprint — stakeholder interviews, competitive audit, positioning
-            workshop, and creative direction — simultaneously. The positioning framework we developed centred on
-            "precision intelligence": Nova doesn't automate for automation's sake; it makes experts faster.</p>
-        <p class="project-text">The visual system reflects that clarity: precise geometry, minimal colour — deep navy
-            and electric amber — and a typographic system that keeps technical data readable at every scale. The brand
-            toolkit delivered included identity guidelines, UI pattern library, pitch deck templates, and a social
-            launch kit ready for day one.</p>
+        <p class="project-text">We built a modular packaging architecture using uncoated kraft and recycled board as
+            primary materials. The identity uses botanical illustration as a dominant graphic device — hand-drawn
+            details that reward close inspection and reinforce the product's artisan origin story.</p>
+        <p class="project-text">Typography is deliberately analogue — a mix of hand-lettered headlines and a quiet
+            grotesque for specifications. Ink is limited to three earth-toned spot colours across the full range,
+            keeping production costs low and environmental impact minimal.</p>
 
         <div class="project-img-full">
-            <img src="https://picsum.photos/seed/nova-3/1200/600" alt="Nova Launch Materials">
+            <img src="https://picsum.photos/seed/verde-3/1200/600" alt="Verde Full Lineup">
         </div>
 
         <div class="project-img-grid">
-            <img src="https://picsum.photos/seed/nova-4/800/600" alt="Nova UI Components">
-            <img src="https://picsum.photos/seed/nova-5/800/600" alt="Nova Social Kit">
+            <img src="https://picsum.photos/seed/verde-4/800/600" alt="Verde In Context">
+            <img src="https://picsum.photos/seed/verde-5/800/600" alt="Verde Detail Shot">
         </div>
     </div>
 
@@ -521,10 +537,23 @@
         <a href="../index.html#portfolio" class="btn-back">Home →</a>
     </div>
 
-    <footer>
-        <div class="footer-logo">Studio<span>.</span>Noir</div>
-        <div class="footer-copy">© 2025 Studio Noir. All rights reserved.</div>
-    </footer>
+    <!-- FOOTER -->
+<footer>
+  <div class="footer-logo">VR<span>.</span>STUDIO</div>
+  <div class="footer-copy">© 2025 VR.STUDIO. All rights reserved. Crafted with intention.</div>
+  <div class="footer-socials">
+    <a href="#" class="social-link" title="Instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37a4 4 0 1 1-1.37-1.37"></path>
+        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+      </svg>
+    </a>
+    <a href="#" class="social-link" title="Behance">Be</a>
+    <a href="#" class="social-link" title="Dribbble">Dr</a>
+    <a href="#" class="social-link" title="LinkedIn">Li</a>
+  </div>
+</footer>
 
     <script>
         const cursor = document.getElementById('cursor'), ring = document.getElementById('cursor-ring');
